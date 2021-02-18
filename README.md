@@ -7,7 +7,6 @@ You can check the slides [here](https://speakerdeck.com/kabirbaidhya/frontend-de
 
 Check the demo hosted on heroku https://simplest-react-todo-app.herokuapp.com/  
 
-
 ## Instructions
 
 First clone this repository.
