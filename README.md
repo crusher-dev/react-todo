@@ -5,7 +5,7 @@ This sample app was a part of react workshop.
 
 You can check the slides [here](https://speakerdeck.com/kabirbaidhya/frontend-development-with-react).
 
-Check the demo hosted on heroku https://simplest-react-todo-app.herokuapp.com/.
+Check the demo hosted on heroku https://simplest-react-todo-app.herokuapp.com/
 
 
 ## Instructions
