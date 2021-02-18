@@ -26,7 +26,7 @@ jobs:
           secrets: '["NETLIFY_AUTH_TOKEN", "NETLIFY_SITE_ID"]'
           
       - name: Install crusher-cli
-        run: npm install -g crusher-cli@1.3.34
+        run: npm install -g crusher-cli@1.3.35
       - name: Start crusher tests
         run: crusher-cli run --project_id=112 --crusher_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjgsInRlYW1faWQiOjg1LCJpYXQiOjE2MTM2NjQ4NTEsImV4cCI6NTIxMzY2MTI1MX0.tW5K6CSNHgSyT7Cp9VFPWladbWm_Er-WXHyqt_4r9YQ 
 
