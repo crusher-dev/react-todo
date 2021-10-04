@@ -31,5 +31,24 @@ jobs:
         run: npm install -g crusher-cli@1.3.35
         
       - name: Start crusher tests
-        run: crusher-cli run --project_id=112  --crusher_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxMjgsInRlYW1faWQiOjg1LCJpYXQiOjE2MTM2Njc5MzQsImV4cCI6NTIxMzY2NDMzNH0.9fQUSNQ12lYVRK9O_5_Zxm0Pm1RFJCifvcUdQFzdo-0 
-
+        run: |
+          curl 'https://ac14-49-205-212-79.ngrok.io/projects/258/tests/actions/run' -X 'POST' -H 'Connection: keep-alive' \
+          -H 'Content-Length: 0' \
+          -H 'Pragma: no-cache' \
+          -H 'Cache-Control: no-cache' \
+          -H 'sec-ch-ua: " Not;A Brand";v="99", "Google Chrome";v="91", "Chromium";v="91"' \
+          -H 'Accept: application/json, text/plain, */*' \
+          -H 'sec-ch-ua-mobile: ?0' \
+          -H 'User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36' \
+          -H 'Content-Type: application/json' \
+          -H 'Origin: http://localhost:3000' \
+          -H 'Sec-Fetch-Site: same-site' \
+          -H 'Sec-Fetch-Mode: cors' \
+          -H 'Sec-Fetch-Dest: empty' \
+          -H 'Referer: http://localhost:3000/' \
+          -H 'Accept-Language: en-GB,en-US;q=0.9,en;q=0.8' \
+          -H 'Cookie: SL_C_23361dd035530_VID=9wCQqlwZA5; SL_C_23361dd035530_KEY=5d4ef29a62d4a15301f52715e34b3c03435ebe41; SL_C_23361dd035530_SID=fmhbV16gER; _ga_9HPXQ79QTS=GS1.1.1632435955.1.0.1632435955.0; _ga=GA1.1.830424223.1632435956; ajs_anonymous_id=dc08c9c6-e914-48ac-a4eb-77b06dfbfa77; token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyODIsInRlYW1faWQiOjIxOSwiaWF0IjoxNjMzMzI1MTQzLCJleHAiOjE2NjQ4NjExNDN9.6hQUyMZiWq3E6kPZGBy07IOKg2xZ_tB02wEHkj6ytAI; isLoggedIn=true; crisp-client%2Fsession%2F5461094b-aec0-4aef-a7dc-d92a0a9dc236=session_ecd567af-2d37-4f7c-963a-ce324dcb2dd2' \
+          --data-raw $DATA_RAW \
+          --compressed
+        env:
+          DATA_RAW: '{"github":{"repoName":"crusherdev/react-todo","commitId":"${{ github.sha }}"}}'
