@@ -1,4 +1,4 @@
-# React Todo App
+# React Todo App Test
 
 This is a sample react todo app done step-by-step.
 This sample app was a part of react workshop.
