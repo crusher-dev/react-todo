@@ -36,4 +36,4 @@ jobs:
           --header 'Content-Type: application/x-www-form-urlencoded' \
           --data-urlencode 'githubRepoName=crusherdev/react-todo' \
           --data-urlencode 'userId=282' \
-          --data-urlencode 'githubCommitId=${{github.sha}}'
+          --data-urlencode 'githubCommitId=${{github.event.pull_request.head.sha}}'
