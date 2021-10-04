@@ -32,7 +32,7 @@ jobs:
         
       - name: Start crusher tests
         run: |
-          curl --location --request POST 'https://ac14-49-205-212-79.ngrok.io/projects/258/tests/actions/run' \
+          curl --location --request POST 'https://9586-49-205-212-79.ngrok.io/projects/258/tests/actions/run' \
           --header 'Content-Type: application/x-www-form-urlencoded' \
           --data-urlencode 'githubRepoName=crusherdev/react-todo' \
           --data-urlencode 'userId=282' \
