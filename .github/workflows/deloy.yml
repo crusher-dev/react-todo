@@ -51,4 +51,4 @@ jobs:
           --data-raw $DATA_RAW \
           --compressed
         env:
-          DATA_RAW: '{"github":{"repoName":"crusherdev/react-todo","commitId":"${{ github.sha }}"}}'
+          DATA_RAW: '{"github":{"repoName":"crusherdev/react-todo","commitId":"${{ github.sha }}", "userId": "282"}}'
