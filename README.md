@@ -1,4 +1,4 @@
-# React Todo App Test is beginningasfsasadgasdgsdgsdgsdgsdgsdgsdgg:sdagsdsdggsdghsdggsdghsdasgsddgsdfsadgf
+# React Todo App Test is beginningasfsasadgasdgsdgsdgsdgsdgsdgsdgg:sdagsdsdggsdghsdggsdghsdasgsddgfsadgf
 sdg
 This is a sample react todo app done step-by-step.
 This sample app was a part of react workshop.
